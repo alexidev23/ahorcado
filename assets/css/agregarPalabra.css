@@ -1,0 +1,74 @@
+.caja {
+    display: flex;
+    justify-content: center;
+}
+
+.elementos {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f9f9f9;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    color: #f9f9f9;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 3px #3180c5 solid;
+    outline: none;
+    background-color: #113f67;
+}
+
+
+.advertencia {
+    color: #afafaf;
+    font-size: 12px;
+}
+
+.advertencia i {
+    margin-right: 5px;
+}
+
+.botones .btnGuardar {
+    width: 240px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #081f37;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.botones .btnGuardar:hover {
+    background-color: #043569;
+    color: #adadad;
+    border: 1px #000 solid;
+}
+
+.botones .btnCancelar {
+    width: 240px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px #043569 solid;
+    cursor: pointer;
+    color: #043569;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botones .btnCancelar:hover {
+    background-color: rgb(107, 107, 107);
+}

@@ -39,25 +39,36 @@ input {
     margin-right: 5px;
 }
 
-.botones .btnGuardar {
-    width: 240px;
+.botones {
+    display: flex;
+    gap: 20px;
+}
+
+.btnGuardar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
     height: 60px;
     border-radius: 50px;
     background-color: #081f37;
     cursor: pointer;
-    border: none;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
 }
 
-.botones .btnGuardar:hover {
+.btnGuardar:hover {
     background-color: #043569;
     color: #adadad;
     border: 1px #000 solid;
 }
 
-.botones .btnCancelar {
+.btnCancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 60px;
     border-radius: 50px;
@@ -67,6 +78,8 @@ input {
     font-weight: 600;
     cursor: pointer;
     font-size: 16px;
+    background-color: #fff;
+    text-decoration: none;
 }
 
 .botones .btnCancelar:hover {

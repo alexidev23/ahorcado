@@ -1,0 +1,148 @@
+.caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Muñeco */
+.dibujo {
+    height: 210px;
+}
+
+.base {
+    width: 160px;
+}
+
+span {
+    display: block;
+    border: 3px black solid;
+}
+
+.poste {
+    margin-left: 40px;
+    height: 160px;
+    width: 6px;
+}
+
+.poste1 {
+    margin-left: 40px;
+    width: 70px;
+}
+
+.poste2 {
+    position: relative;
+    top: 30px;
+    left: 110px;
+    width: 6px;
+    height: 30px;
+}
+
+.cabeza {
+    position: relative;
+    bottom: 145px;
+    left: 94px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.torso {
+    position: relative;
+    bottom: 148px;
+    left: 111px;
+    width: 2px;
+    height: 60px;
+}
+
+.brazo1 {
+    position: relative;
+    bottom: 200px;
+    left: 102px;
+    width: 3px;
+    height: 25px;
+    rotate: 42deg;
+}
+
+.brazo2 {
+    position: relative;
+    bottom: 224px;
+    left: 121px;
+    width: 6px;
+    height: 25px;
+    rotate: -42deg;
+}
+
+.pierna1 {
+    position: relative;
+    bottom: 202px;
+    left: 102px;
+    width: 3px;
+    height: 35px;
+    rotate: 30deg;
+}
+
+.pierna2 {
+    position: relative;
+    bottom: 237px;
+    left: 120px;
+    width: 3px;
+    height: 35px;
+    rotate: -30deg;
+}
+
+/* Lineas para cada letra */
+.palabra {
+    height: 60px;
+    width: 350px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.linea {
+    width: 20px;
+    height: 1px;
+    margin-left: 10px;
+}
+
+/* botones */
+.botones {
+    margin: 20px 0;
+}
+
+.jugar{
+    width: 220px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #053d53;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.jugar:hover {
+    background-color: #0092ca;
+    color: #353434;
+}
+
+.desistir {
+    width: 200px;
+    background-color: #fff;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #081f37;
+    border: 1px #081f37 solid;
+    cursor: pointer;
+}
+
+.desistir:hover {
+    background-color: #6d6c6c;
+    color: #d0d1d1;
+}

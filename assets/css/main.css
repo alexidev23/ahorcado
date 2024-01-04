@@ -11,14 +11,59 @@ body {
     background-color: #113f67;
 }
 
-header {
-    height: 15vh;
+
+main {
+    height: 85vh;
+}
+
+.caja {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.iniciar {
+    background-color: #0092ca;
+    color: #f3f3f1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 60px;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 45px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-main {
-    height: 70vh;
+.iniciar:hover {
+    background-color: #053d53;
+    color: #9ea1a5;
+    border: 1px #0092ca solid;
+}
+
+.agregar {
+    background-color: #081f37;
+    color: #f3f3f1;
+    font-size: 16px;
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+    border-radius: 45px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregar:hover {
+    background-color: #043569;
+    color: #9ea1a5;
+    border: 1px #081f37 solid;
 }
 
 footer {

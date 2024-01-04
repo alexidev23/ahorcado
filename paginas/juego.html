@@ -4,44 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/ahorcado.svg  " type="image/x-icon">
     <title>Juego de Ahorcado</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/juego.css">
 </head>
 <body>
-    <header>
-        <img src="../assets/img/Logo.svg" alt="Logo de alura">
-    </header>
-    <main class="caja">
-        <div class="dibujo">
+    <main class="tablero" id="tablero">
+        <div class="dibujo" id="figura">
+            <span class="soporte"></span>
             <span class="poste2"></span>
             <span class="poste1"></span>
             <span class="poste"></span>
             <span class="base"></span>
-            <span class="cabeza"></span>
-            <span class="torso"></span>
-            <span class="brazo1"></span>
-            <span class="brazo2"></span>
-            <span class="pierna1"></span>
-            <span class="pierna2"></span>
+
         </div>
-        <div class="palabra">
-            <span class="linea"></span>
-            <span class="linea"></span>
-            <span class="linea"></span>
-            <span class="linea"></span>
+        <div class="letras" id="letras">
+
         </div>
-        <div class="botones">
-            <button class="jugar">Jugar de nuevo</button>
-            <button class="desistir">Desistir</button>
+        <div class="palabra" id="palabra">
         </div>
     </main>
     <footer>
         <h4>Hecho por Alexis Escobar</h4>
         <div class="redes">
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../assets/img/github.svg" alt=""></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../assets/img/linkedin.svg" alt=""></a>
+            <a href="https://github.com/alexidev23" target="_blank" rel="noopener noreferrer"><img src="../assets/img/github.svg" alt="Icono de Github"></a>
+            <a href="https://www.linkedin.com/in/alexis-escobar-95b491184/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/linkedin.svg" alt="Icono de L`inkedin"></a>
         </div>
     </footer>
+
+    
+    <script src="../script.js"></script>
 </body>
 </html>

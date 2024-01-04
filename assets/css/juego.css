@@ -1,11 +1,12 @@
-.caja {
+.tablero {
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Muñeco */
+/* Base */
 .dibujo {
     height: 210px;
 }
@@ -14,9 +15,9 @@
     width: 160px;
 }
 
-span {
+.dibujo span {
     display: block;
-    border: 3px black solid;
+    border: 3px #fff solid;
 }
 
 .poste {
@@ -37,6 +38,16 @@ span {
     width: 6px;
     height: 30px;
 }
+
+.soporte {
+    position: relative;
+    width: 36px;
+    transform: rotate(313deg);
+    top: 50px;
+    left: 37px;
+}
+
+/* Figura */
 
 .cabeza {
     position: relative;
@@ -91,14 +102,35 @@ span {
     rotate: -30deg;
 }
 
+/* Palabras incorrectas */
+
+.letras {
+    margin: 14px;
+    width: 400px;
+    padding: 12px;
+}
+
+.letras .letra {
+    display: inline-block;
+    color: #d0d1d1;
+    margin: 0 4px;
+}
+
 /* Lineas para cada letra */
 .palabra {
     height: 60px;
     width: 350px;
-    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.palabra span {
+    border-bottom: 3px #fff solid;
+    margin: 0 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .linea {
@@ -146,3 +178,61 @@ span {
     background-color: #6d6c6c;
     color: #d0d1d1;
 }
+
+/* Finish Game modal */
+
+.finishGame {
+    border: 1px #6d6c6c solid;
+    height: 180px;
+    width: 320px;
+    position: absolute;
+    background-color: #1b71f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+    gap: 20px;
+    z-index: 1;
+}
+
+.finishGame .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.finishGame .subtitle {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.finishGame .resetGame {
+    height: 35px;
+    width: 180px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #081f37;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.resetGame:active {
+    transform: scale(0.9);
+}
+
+.finishGame .resetGame:hover {
+    color: #252525;
+    background-color: #073669;
+    transition: all 0.2s ease-in-out;
+}
+
